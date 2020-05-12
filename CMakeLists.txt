@@ -8,9 +8,9 @@ include_directories(
         ${Boost_INCLUDE_DIRS}
 )
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -pthread")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -pthread")
 
 add_executable(fsand src/main.cpp)
 
-target_link_libraries(fsand ${OpenCV_LIBS} ${Boost_LIBRARIES})
+target_link_libraries(fsand stdc++fs ${OpenCV_LIBS} ${Boost_LIBRARIES})
 
